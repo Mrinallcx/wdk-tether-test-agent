@@ -1,0 +1,39 @@
+{
+  "name": "@payagent/wdk-solana-test",
+  "private": true,
+  "type": "module",
+  "description": "PayAgent × Tether WDK template: two Solana agents register, attach a WDK wallet, and hop USDT.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mrinallcx/wdk-tether-test-agent.git"
+  },
+  "homepage": "https://github.com/Mrinallcx/wdk-tether-test-agent",
+  "bugs": {
+    "url": "https://github.com/Mrinallcx/wdk-tether-test-agent/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "wallets": "tsx generate-wallets.ts",
+    "setup": "tsx setup.ts",
+    "check": "tsx check.ts",
+    "preflight": "tsx preflight.ts",
+    "balances": "tsx balances.ts",
+    "run": "tsx run.ts",
+    "pdf": "tsx generate-pdf.tsx"
+  },
+  "dependencies": {
+    "@solana/spl-token": "^0.4.15",
+    "@solana/web3.js": "^1.98.4",
+    "@tetherto/wdk": "^1.0.0-beta.17",
+    "@tetherto/wdk-wallet-solana": "^1.0.0-beta.15",
+    "bip39": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.17.2",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.2"
+  }
+}
